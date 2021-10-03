@@ -14,10 +14,11 @@ enum Language {
 export async function handler(event: APIGatewayProxyEvent, context: Context) {
 
  
-    const instance = GraphQueryFactory.createInstance(Language.Cypher, process.env.NEPTUNE_ENDPOINT!)
-   
-  const query = instance.getQuery().api.createAPI();
-    
+    const query = GraphQueryFactory.getQuery(Language.Cypher, process.env.NEPTUNE_ENDPOINT!)
+
+    console.log(query.api.createAPI())
+    console.log(query.user.getUser('abc'))   
+  
 }
 
 
