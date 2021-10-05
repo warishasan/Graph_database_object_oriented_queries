@@ -1,5 +1,5 @@
 
 export default interface IGraphApiQuery{
-    createAPI():void; 
+    getMyApis():void; 
     getAPI(id:string):void; 
 }

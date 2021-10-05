@@ -9,7 +9,7 @@ constructor (endpoint:string){
 this.endpoint = endpoint
   }
 
-   createAPI() {
+  getMyApis() {
  console.log('createAPi')
   }
 

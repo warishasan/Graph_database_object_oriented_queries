@@ -16,13 +16,14 @@ export default class GremlinApiQuery implements IGraphApiQuery {
     this.g = g;
   }
 
-   createAPI() {
-   
+   getMyApis() {
+   // write gremlin query here
   console.log('createApi')
   }
 
 
   getAPI(id:string){
+     // write gremlin query here
     console.log('getApi')
   }
  
